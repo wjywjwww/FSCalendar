@@ -930,6 +930,9 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
         } else {
             _preferredRowHeight = _rowHeight;
         }
+        if (_scope == FSCalendarScopeWeek){
+            _preferredRowHeight = _rowHeight;
+        }
     }
     return _preferredRowHeight;
 }
